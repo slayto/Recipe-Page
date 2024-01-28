@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Centered Card</title>
+</head>
+
+<style>
+    body {
+        background-color: hsl(30, 54%, 90%);
+    }
+
+    .col-padding {
+        padding-top: 700px;
+        padding-bottom: 700px;
+    }
+
+    .list-group-numbered .list-group-item {
+        position: relative;
+        counter-increment: item;
+        border: none;
+    }
+
+    .list-group-numbered .list-group-item::before {
+        content: counter(item) ".";
+        position: absolute;
+        left: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .list-group-numbered .list-group-item p {
+        margin-left: 1.5rem;
+        /* Adjust the indentation based on your needs */
+    }
+
+    .list-margin p {
+        margin-left: 0.5rem;
+    }
+
+
+    .ys-font {
+        font-family: 'Young Serif', serif;
+        font-weight: bold;
+        color: hsl(14, 45%, 36%);
+    }
+
+    .card,
+    .round-edge {
+        border-radius: 20px;
+    }
+
+    .card-img-top {
+        border-radius: 30px;
+    }
+
+    .rose-bg {
+        background-color: hsl(330, 100%, 98%);
+    }
+
+    h6{
+        color: hsl(332, 51%, 32%);
+        font-weight: 700;
+    }
+
+    .table td strong{
+        color: hsl(332, 51%, 32%);
+    }
+
+    /* p {
+        font-family: 'Young Serif', serif;
+    } */
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-padding">
+                <div class="d-flex justify-content-center align-items-center vh-100">
+                    <div class="card shadow p-3" style="width: 50rem">
+                        <img src="assets/images/image-omelette.jpeg" class="card-img-top p-3" alt="...">
+                        <div class="card-body">
+                            <h1 class="card-title ys-font fw-semibold">Simple Omelette Recipe</h1>
+                            <p class="card-text">
+                                An easy and quick dish, perfect for any meal. This classic omelette
+                                combines beaten eggs cooked
+                                to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+                            </p>
+
+                            <div class="container rose-bg p-4 round-edge">
+                                <h6>Preparation time</h6>
+                                <ul>
+                                    <li class="list-margin">
+                                        <p><strong>Total:</strong> Approximately 10 minutes</p>
+                                    </li>
+                                    <li class="list-margin">
+                                        <p><strong>Preparation:</strong> 5 minutes</p>
+                                    </li>
+                                    <li class="list-margin">
+                                        <p><strong>Cooking:</strong> 5 minutes</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <h3 class="ys-font mt-5">Ingredients</h3>
+                            <ul>
+                                <li class="list-margin">
+                                    <p>
+                                        2-3 large eggs
+                                    </p>
+                                </li>
+                                <li class="list-margin">
+                                    <p>
+                                        Salt, to taste
+                                    </p>
+                                </li>
+                                <li class="list-margin">
+                                    <p>
+                                        Pepper, to taste
+                                    </p>
+                                </li>
+                                <li class="list-margin">
+                                    <p>
+                                        1 tablespoon of butter or oil
+                                    </p>
+                                </li>
+                                <li class="list-margin">
+                                    <p>
+                                        Optional fillings: cheese, diced vegetables, cooked meats, herbs
+                                    </p>
+                                </li>
+                            </ul>
+                            <hr class="mt-5">
+
+                            <h3 class="ys-font mt-5">Instructions</h3>
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item">
+                                    <p><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt
+                                        and pepper until they are well mixed. You can add a tablespoon of water or milk
+                                        for a fluffier texture.
+                                    </p>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <p><strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat
+                                        and add butter or oil.
+                                    </p>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <p><strong>Cook the omelette:</strong> Once the butter is melted and bubbling,
+                                        pour in the eggs. Tilt the
+                                        pan to ensure the eggs evenly coat the surface.
+                                    </p>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <p><strong>Add fillings (optional):</strong> When the eggs begin to set at the
+                                        edges but are still slightly
+                                        runny in the middle, sprinkle your chosen fillings over one half of the
+                                        omelette.
+                                    </p>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <p><strong>Fold and serve:</strong> As the omelette continues to cook, carefully
+                                        lift one edge and fold it
+                                        over the fillings. Let it cook for another minute, then slide it onto a plate.
+                                    </p>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <p><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.
+                                    </p>
+                                </li>
+
+                            </ol>
+
+                            <hr class="mt-5">
+
+                            <h3 class="ys-font my-4">Nutrition</h3>
+                            The table below shows nutritional values per serving without the additional fillings.
+
+                            <div class="container mt-3">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Calories</td>
+                                            <td><strong>277kcal</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Carbs</td>
+                                            <td><strong>0g</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Protein</td>
+                                            <td><strong>20g</strong></td>
+                                        </tr>
+                                        <tr style="border-color: transparent;">
+                                            <td>Fat</td>
+                                            <td><strong>22g</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
